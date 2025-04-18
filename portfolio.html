@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>👑POOVARASAN R</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="./image/result (2)1.png" alt="Profile Picture" >
+        <h3>Hi I'm </h3>
+        <h1><span>POOVARASAN </span></h1>
+        <h4>Full Stack Developer | Fresher </h4>
+        <p> 📍 Chennai | ✉️ your.poovarasan@gmail.com | 📱 +91 6382331532 </p>
+        <button onclick="downloadResume()" >Resume</button>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>      
+        <p>Highly motivated fresher with a strong foundation in front-end development, including HTML, CSS, JavaScript, and React.js. Passionate about building responsive and visually appealing web applications. Looking for an opportunity to enhance user experience through innovative UI/UX design and interactive web solutions.</p>    
+        <h2>Education</h2>
+        <div class="box">
+            <div class="edu">
+                <img src="./image/vecteezy_happy-boy-going-home-after-school_6132779.jpg" alt="">
+                <div class="info">
+                <h3>SSLC</h3>
+                <p>GOVT.HR.SEC.SCHOOL<br>2017 – 2018 | Thevur <br>Percentage: 66.6%
+                </p>
+                </div>
+            </div>
+            <div class="edu">
+                <img src="./image/vecteezy_happy-student-in-front-of-the-school-building_6132905.jpg" alt="">
+                <div class="info">
+                <h3>HSC</h3>
+                <p>GOVT.HR.SEC.SCHOOL<br>2019 – 2020 | Thevur <br>Percentage: 58%
+                </p> 
+                </div>
+            </div>
+            <div class="edu">
+                <img src="./image/ccccc.jpg" alt="">
+                <div class="info">
+                <h3>College Degree</h3>
+                <p>B.E COMPUTER SCIENCE AND ENGINEERING <br>    
+                    Shree Venkateshwara Hi-Tech Engineering College <br>2020 – 2024 | Gobi <br>CGPA 7.40</p>
+                </div>
+            </div>
+        </div>
+        <h2>Skills</h2>
+        <div class="skills">
+            <img src="./image/Skills.jpg" alt="">
+            <div class="info">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+                <li>Core Java</li>
+                <li>J2EE</li>
+            </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Fake News Detection</h3>
+            <p>Developed a Fake News Stance Detection system to analyze and classify news articles based on their stance towards a given claim. The system helps in identifying misinformation by categorizing articles as agree, disagree, discuss, or unrelated using Natural Language Processing (NLP) and Machine Learning.</p>
+        </div>
+        <div class="project">
+            <h3>Hospital Management System</h3>
+            <p>Developed an HMS to streamline hospital operations, manage patient records, and facilitate communication between healthcare professionals. The system includes more features.</p>
+        </div>        
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>(HTML, CSS) – A personal website showcasing your skills and projects.</p>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="https://mail.google.com/mail">Email: pkpoovarasan1532@gmail.com</a><br><br>
+        <a href="https://in.linkedin.com/">LinkedIn: www.linkedin.com/in/pk-poovarasan</a><br><br>
+        <a href="https://github.com/">GitHub: https://github.com/Poovarasn1532</a> 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 POOVARASAN. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function downloadResume() {
+          const link = document.createElement('a');
+          link.href = 'POOVARASAN R.pdf'; 
+          link.download = 'POOVARASAN R.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+      </script>
+
+</body>
+</html>
